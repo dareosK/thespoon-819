@@ -4,5 +4,6 @@
 
 <%= link_to "Delete #{@restaurant.name}",
             restaurant_path(@restaurant),
+            # you need to specify the method if it is not a GET request
             method: :delete,
             data: { confirm: "Are you sure?" } %>
